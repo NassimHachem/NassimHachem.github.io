@@ -1091,8 +1091,8 @@ footer{
         margin: 0 1em;
     }
     
-    footer{
-        margin-left: -1em;
+    .footer-txt{
+        margin-left: 1.2em
     }
     
     .nav-border-mobile a{
