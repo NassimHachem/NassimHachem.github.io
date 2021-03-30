@@ -93,12 +93,16 @@ main{
     
 }
 
-#signup{
+#signup-desktop{
+    color: #0065FC;
+    font-weight: bold
+}
+#signup-mobile{
     color: #0065FC;
     font-weight: bold
 }
 
-}
+
 .header-nav-link:nth-child(1){
     color: #0065FC;
     
@@ -896,7 +900,7 @@ footer{
 @media screen and (max-width: 930px){
     
     .vieux-port, .vieux-port img{
-        width: 10.em;
+        width: 10em;
     }
     .parc-calanques, .parc-calanques img{
         width: 10em;
@@ -916,10 +920,8 @@ footer{
     
     .parc-longchamp, .parc-longchamp img{
         
-        width: 10em
+        width: 10em;
     }
-    
-    
     
 }
 
