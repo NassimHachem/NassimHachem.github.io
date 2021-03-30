@@ -3,7 +3,11 @@ body{
     line-height: 0.8;
     margin: 0;
     
-    
+}
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 a{
