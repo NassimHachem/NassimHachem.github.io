@@ -2,10 +2,8 @@ body{
     font-family: 'Raleway', sans-serif;
     line-height: 0.8;
     margin: 0;
-    appearance: none;
     
-    -moz-appearance: button;
--webkit-appearance: button;
+    
 }
 
 a{
