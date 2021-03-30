@@ -103,10 +103,7 @@ main{
 }
 
 
-.header-nav-link:nth-child(1){
-    color: #0065FC;
-    
-}
+
 
 .nav-bord:hover{
     color: #0065FC;
