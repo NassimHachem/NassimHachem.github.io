@@ -12,7 +12,7 @@ input {
 }
 
 a{
-    text-decoration: none
+    text-decoration: none;
 }
 
 main{
@@ -20,65 +20,51 @@ main{
         margin-right: 1.875em
     }
 
-
-.topnav{
-    display: grid;
-    align-items: center;
-    height: 4.375em;
-    grid-template-columns: 5fr 1fr 1fr
-   
+.header{
+  display: grid;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
 }
-
 .header-img{
-    margin-left:  3.438em;
+  grid-area: logo;
+  padding: 0 2rem;
+  height: 2.813rem;
 }
-
-#signup{
-    margin: auto;
-    
-}
-
-
 .header-nav{
-    display: flex;
-}
-
-.header-nav a{
-    
+  display: flex;
+  align-items: center;
+  grid-area: navbar;
     text-decoration: none;
-    font-size: 1em;
-    font-weight: 500;
-    margin: 0 1.875em;
-    transition: 0.3s;
+}
+.header-nav-link{
+  padding: 2rem;
+  font-weight: 500;
+  text-align: center;
+  transition-duration: 0.1s;
+  border-top: 3px transparent solid;
+  border-bottom: 3px transparent solid;
+}
+
+#nav-border{
+    color: #0065FC;
+}
+#nav-bord{
     color: inherit
-    
 }
 
-#signup{
-    color: #0065FC;
-    font-weight: bold
-}
-
-
-
-
-.nav-bord:hover{
-    color: #0065FC;
-    border-top: 2px solid blue;
-    margin-top: -29px;
-    padding-top: 27px;
-   
-}
-
-.header-nav-link-signup{
+#nav-bord:hover{
     color: #0065FC;
 }
 
-.nav-border{
-    border-top: 2px solid blue;
-    margin-top: -29px;
-    padding-top: 27px;
-    color: #0065FC;
+
+.signup {
+  display: flex;
+  align-items: center;
+  grid-area: button;
+  padding: 2rem;
+  color: #0065FC;
+  font-weight: 600;
 }
 
 
@@ -991,7 +977,7 @@ footer{
 
 /*--------------605px--------------------*/
 
-@media screen and (max-width:605px){
+@media screen and (max-width:600px){
     
   
     .fig-hosting{
@@ -1028,9 +1014,6 @@ footer{
     }
     
     
-    header{
-        margin: 0
-    }
     
     main{
         margin: 0
@@ -1078,6 +1061,41 @@ footer{
         line-height: 1.1rem;
     }
     
+    .header {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: "logo . button" "navbar navbar navbar";
+    }
+    
+    .header-img {
+        order: 0;
+    }
+    
+      .signup {
+        order: 1;
+      }
+    
+      .header-nav {
+        order: 2;
+      }
+    
+      .header-nav-link{
+        border-top: none;
+        border-bottom: 3px solid #F2F2F2;
+        width: 50%;
+      }
+    
+      #nav-border{
+        border-bottom-color: #0065FC;
+      }
+    
+      #nav-bord:hover{
+        border-bottom-color: #0065FC;
+      }
+    
+
+
+    
+    
     
 }
 
@@ -1088,22 +1106,23 @@ footer{
         width: 100%
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
 
 
 
+@media screen and (min-width: 601px) {
+  .header {
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo . navbar button";
+  }
+  #nav-border{
+    border-top: 3px solid #0065FC;
+  }
+  .header-nav-link:hover {
+    border-top: 3px solid #0065FC;
+    
+  }
+}
 
-
-
-
-
+  
 
