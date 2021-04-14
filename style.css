@@ -15,74 +15,28 @@ a{
     text-decoration: none
 }
 
-header{
-        margin-left: 3.438em;
-        margin-right: 1.875em;
-    }
-
-
 main{
         margin-left: 3.438em;
         margin-right: 1.875em
     }
 
 
-.topnav-desktop{
-    display: flex;
+.topnav{
+    display: grid;
     align-items: center;
-    justify-content: space-between;
     height: 4.375em;
-    
+    grid-template-columns: 5fr 1fr 1fr
    
 }
 
-.topnav-mobile{
-    display: none;
-    align-items: center;
-    justify-content: space-between;
-    height: 4.375em;
-    margin-bottom: 5em;
-  
-    
-   
-}
-.header-top-mobile{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2em
+.header-img{
+    margin-left:  3.438em;
 }
 
-.nav-border-mobile{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-}
-
-
-.nav-bord-mobile{
-    width: 50%;
-    display: flex;
-    justify-content: center
-}
-
-.header-nav-mobile{
-    display: flex;
-    width: 100%;
+#signup{
+    margin: auto;
     
 }
-
-.header-nav-mobile a{
-    
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: 500;
-    margin: 0 1.875em;
-    transition: 0.3s;
-    color: inherit
-    
-}
-
 
 
 .header-nav{
@@ -100,11 +54,7 @@ main{
     
 }
 
-#signup-desktop{
-    color: #0065FC;
-    font-weight: bold
-}
-#signup-mobile{
+#signup{
     color: #0065FC;
     font-weight: bold
 }
@@ -1077,16 +1027,7 @@ footer{
         width: 100%
     }
     
-    .topnav-mobile{
-        display: block;
-    }
-    .topnav-desktop{
-        display: none;
-    }
     
-    .header-top-mobile{
-        margin: 1.2em 1em
-    }
     header{
         margin: 0
     }
@@ -1122,21 +1063,7 @@ footer{
         margin-left: 1.2em
     }
     
-    .nav-border-mobile a{
-        color: #0065FC
-    }
     
-    .nav-border-mobile{
-        border-bottom: 3px solid #0065FC;
-        padding-bottom: 1em
-    }
-    
-    .nav-bord-mobile:hover{
-        border-bottom: 3px solid #0065FC
-    }
-    .nav-bord-mobile a:hover{
-        color: #0065FC
-    }
     
     .search-info p{
         line-height: 1.1rem;
